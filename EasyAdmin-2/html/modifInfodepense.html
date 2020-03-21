@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modifier depense</title>
+	<link rel="stylesheet" type="text/css" href="../css/style_right_part.css">
+  <script src="../JS/ajouter.js"></script>
+</head>
+<body onclick="Magasin()">
+<h1>Modifier depenses</h1>
+  <form d="venteForm" >
+ 
+  		<h3>Id dépense:</h3> <input type="number" min="0" id="idDepense"  ><br>
+  		<h3>Nomenclature:</h3><input type="text" id="nomDepense" ><br>
+  		<h3>Montant:</h3><input type="number" id="momtant" min="0" ><br>
+  		<h3>Nature:</h3>
+  		ponctuelle:<input type="radio" id="nature" name="ponctuelle"> réccurentes</h3><input type="radio" id="nature" name="recurrente"><br>
+  		<input type="submit" id="valider" value="Envoyer" onclick="ajouterDepense()">
+      
+</body>
+</html>

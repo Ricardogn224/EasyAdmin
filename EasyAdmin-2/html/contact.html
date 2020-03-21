@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style_contact.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="../JS/fonction.js"></script>
+	 <script src="https://kit.fontawesome.com/7fc6a7888d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<body>
+<!-- création d'une bannière -->
+	<div class="header" id="myheader">
+  <a href="../index.html"> <img src="https://cdn.glitch.com/7524d71d-fe86-4c64-9e50-528abd0e03c6%2Flogo.png?v=1573567702540" alt="logo" > </a>
+      <nav class="bannier">
+			<ul>
+				<li><a href="../html/connexion.html">Se connecter</a></li>
+        <li><a href="../html/s'inscrire.html">S'inscrire</a> </li>
+        <li><a href="../html/contact.html">Contacter</a></li>
+			</ul>
+      </nav>
+  </div>
+ 
+ <!-- partie "contact" -->
+   
+  <div class="row">
+    <div id="contact">
+      <p> Contact <p1>
+      <hr>
+ <!--  informations sur comment nous contacter  -->
+    <div class="column informations"> 
+      <ul>
+      	<li> <i class="fas fa-phone-alt"></i> +33625941830 </li>
+      	<li> <i class="fas fa-envelope"></i> contact@easyadmin.fr </li>
+      	<li> <i class="fas fa-map-marker-alt"></i> 90 rue de Tolbiac, 75013 France</li>
+      </ul>
+    </div>
+<!-- formulaire pour nous contacter -->
+    <div class="column droite"> 
+    	<!-- avant l'envoi -->
+    	 <div id="avant">
+      <form id="formulaire">
+      <label for="nom"> <input id="nom" name="nom" placeholder="Votre nom" type="text" onblur="checkRempli(this)" /> </label> <br>
+       <label for="mail"> <input id="mail" name="mail"placeholder="Email" type="text"  onblur="checkMail(this)" /> </label> <br>
+       <label for="msg">  <textarea  id ="msg" rows="3" cols="30" placeholder="Entrez votre message"> </textarea> </label> <br>
+      </form>
+      <button id="envoyer" onclick="hide2('avant','après')"> envoyer </button>
+         </div>
+<!-- après l'envoi --> 
+    <div id="après"> 
+    	<p> Votre message a bien été envoyé. <br> Notre équipe se charge de le traiter dans les plus bref délais </p>
+    </div>
+    </div>
+    </div>
+   </div>
+
+  
+    <!-- bas de page (footer) -->
+     <div class="footer">
+        <div class="columne c1">
+          <ul>
+        <li> EasyAdmin </li><br>
+      <li>90 rue de Tolbiac, 75013 Paris </li><br>
+        <li> FRANCE </li>
+        </ul>
+        </div>
+
+        <div class="columne c2">
+          <div id="icon">
+           <a href="">
+       <i class="fab fa-instagram"></i>
+       </a>
+
+       <a href="">
+       <i class="fab fa-twitter"></i>
+       </a>
+
+        <a href="">
+       <i class="fab fa-facebook"></i>
+       </a>
+           </div>
+        <a href="../html/contact.html"><p id="p2"> en savoir plus sur EasyAdmin </p> </a>
+       </div>
+       
+        <div class="columne c3">
+            <ul>
+        <li>0625941830</li><br>
+        <li>contact@easyadmin.fr</li><br>
+        </ul>
+      
+        </div>
+    </div>
+
+      
+    </div>
+  </body>
+</html>

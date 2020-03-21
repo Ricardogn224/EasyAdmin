@@ -1,0 +1,230 @@
+body{
+  font-family: museo-sans,Arial,sans-serif;
+  margin:0;
+  padding: 0;
+}
+
+/* on enlève le style par defaut des listes et des liens */ 
+
+ul {
+  list-style-type: none; 
+}
+a{
+  text-decoration:none;
+  color: #EEC338;
+}
+
+/* bannière */ 
+.bannier{
+	float: right;
+  margin-top:45px;
+
+}
+.header{
+  padding:0;
+background-image: url('https://backgroundcheckall.com/wp-content/uploads/2017/12/white-marble-background-tumblr-7.jpg'); 
+}
+
+.header li{
+  display: inline-block;
+  padding: 10px;
+}
+
+
+.header li a{
+  color: black;
+  font-size:15px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+}
+.header li a:hover{
+  color:#EEC338;
+}
+
+.header  img{
+	width:11%;
+  margin-top:12px;
+  margin-left:20px;
+}
+
+/*slides */
+
+.mySlides {
+  display:;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+
+.slideshow{
+  position: relative;
+}
+
+/* boutons avant et après */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: black;
+  transition: 0.6s ease;
+  border-radius: 0 5px 5px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+
+
+.bouton{
+  width: 100%;
+  height: 650px;
+}
+
+
+
+/* création de colonnes */
+.column {
+  float: left;
+  width: 25%;
+  padding:55px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* section avantage (milieu de page) */
+
+.avantages{
+  background-color:#EEC338;
+ 
+}
+
+.avantages h1, .avantages ul{
+  text-align:center;
+  color:black;
+}
+
+
+
+.gallery {
+  margin: 5px;
+  float:left;
+  width: 32%;
+ }
+
+
+
+.gallery img {
+  width:150px;
+  height:150px;
+  margin-right:auto;
+  margin-left:35%;
+}
+
+
+.maj{
+  margin-right:auto;
+  margin-left:12%;
+}
+
+#perfo img:hover{
+  transform: rotate(90deg);
+  transition-duration:1s;
+}
+
+
+
+div.column h{
+text-align: center;
+}
+
+/* section prix (milieu de page) */
+
+
+#price{
+  background-color:#EFE8E0;
+  height:400px;
+}
+
+#price h1, #price h3{
+  text-align:center;
+}
+
+.column_price{
+  float: right;
+  background-color: white; 
+  padding: 10px; 
+  margin: 30px; 
+  width: 200px; 
+  height: 309px;
+}
+
+.column_price a{
+  text-align:center;
+  float: left;
+  background-color:#EEC338; 
+  width: 200px; 
+  height: 50px;
+  color:white;
+  
+  
+}
+
+
+
+
+/* bas de page (footer) */
+
+.footer {
+ background-image: url('https://backgroundcheckall.com/wp-content/uploads/2017/12/white-marble-background-tumblr-7.jpg'); 
+height: 400px;
+font-family: 'Montserrat', sans-serif;
+
+}
+
+.columne {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+
+.c1 , .c3{
+  margin-top: 260px;
+}
+
+
+ .footer i{
+  margin-top: 50px;
+  margin-left:50px;
+  font-size: 50px;
+ }
+ #icon{
+  margin-right: 40px;
+ }
+
+
+#p2{
+  text-transform: uppercase;
+  color: white;
+  border: 3px solid #EEC338;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #EEC338;
+  margin-top: 50px;
+  letter-spacing: 5px;
+}

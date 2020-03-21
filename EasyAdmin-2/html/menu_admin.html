@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Menu</title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/style_menu.css">
+    <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="../JS/fonctions.js"></script>
+	
+</head>
+<body>
+
+<!-- création d'une bannière -->
+  <div class="header" id="myheader">
+  <a href="../html/index.html"> <img src="https://cdn.glitch.com/7524d71d-fe86-4c64-9e50-528abd0e03c6%2Flogo.png?v=1573567702540" alt="logo" > </a>
+      <nav class="bannier">
+      <ul>
+        <li><a href="../html/index.html">Se déconnecter</a></li>
+        <li><a href="../html/contact.html">Contacter</a></li>
+      </ul>
+      </nav>
+  </div>
+
+
+
+    <div class="row">
+    	<div class="outils">
+    		<button id="magasin" onclick="showMagasin()">Magasin</button>
+    		<button id="produit"onclick="showProduit()">Produit</button>
+    		<button id="salarier" onclick="showEmployer()">Salariés</button>
+    	</div>
+    </div>
+    <div class="row">
+        <section id="sectionMagasin" style="display:none; padding:20px;">
+            <input type="text" placeholder="l'ID du magasin" name="id" id="idMagasin">
+            <input type="text" placeholder="Nom du magasin" name="nom" id="nomMagasin">
+            <input type="text" placeholder="L'adresse du magasin du magasin" name="adresseMagasin" id="adresseMagasin">
+            <button onclick="ajouterMagasin()">Ajouter le magasin</button>
+
+            <div id="sectionMesMagasins" style="height:300px; overflow: scroll;"></div>
+        </section>
+
+    </div>
+
+    <div class="row">
+        <section id="sectionProduit" style="display:none; padding:20px;">
+
+            <input type="number" placeholder="l'ID du Produit" name="id" id="idProduit">
+            <input type="text" placeholder="Nom du Produit" name="nom" id="nomProduit">
+            <input type="number" placeholder="Quantité du produit" name="quantité" id="quantitéProduit">
+            <input type="number" id="prixAchatProduit" placeholder="Prix d'achat du produit">
+            <input type="number" placeholder="prix du produit" name="quantité" id="prixVenteProduit">
+            <input type="text" placeholder="description" id="description">
+            <button onclick="ajouterProduit()">Ajouter le produit</button>
+            <br>
+            <select id="choisirMagasin2" style="width:200px;" onchange="rechargerProduits()">
+                 <option value="">--Tous les magasins--</option>
+            </select> 
+            <div id="sectionMesProduits" style="height:300px; overflow: scroll;"></div>
+        </section>
+
+    </div>
+
+    <div class="row">
+        <section id="sectionEmployer" style="display:none; padding:20px;">
+            <input type="number" placeholder="l'ID de l'employer" name="id" id="idEmployer">
+            <input type="text" placeholder="Nom de l'employer" name="nom" id="nomEmployer">
+            <input type="text" placeholder="Adresse" name="quantité" id="AdresseEmployer">
+            <input type="text" placeholder="Poste" name="quantité" id="poste">
+            <input type="number" placeholder="salaire" name="salaire" id="salaire">
+            <button onclick="ajouterEmployer()">Ajouter le Employer</button>
+
+            <div id="sectionMesEmployers" style="height:300px; overflow: scroll;"></div>
+        </section>
+
+    </div>
+
+    <div class="row"> 
+	<div class="left_part">
+		<ul>
+		<li><button id="p_vente" onclick="refreshIframe('p_vente')">Points de vente</button></li><br>
+		<li><button id="Produit" onclick="refreshIframe('Produit')"> Produits</button></li><br>
+		<li><button id="employer" onclick="refreshIframe('employer')">Employés</button></li><br>
+		<li><button id="dépenses" onclick="refreshIframe('dépenses')">dépenses</button></li><br>
+		</ul>
+		</div>
+
+	<div class="right_part">
+
+<iframe id="contenu"
+    title="Inline Frame Example"
+    width="99%"
+    height="503"
+    src="x.html"
+    border="0">
+</iframe>
+
+</body>
+</html>

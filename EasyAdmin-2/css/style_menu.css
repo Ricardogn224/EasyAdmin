@@ -1,0 +1,117 @@
+body{
+  font-family: museo-sans,Arial,sans-serif;
+  margin:0;
+  padding: 0;
+}
+
+/* on enlève le style par defaut des listes et des liens */ 
+
+ul {
+  list-style-type: none; 
+}
+a{
+  text-decoration:none;
+  color: #EEC338;
+}
+
+/* bannière */ 
+.bannier{
+  float: right;
+  margin-top:45px;
+
+}
+.header{
+  padding:0;
+background-image: url('https://backgroundcheckall.com/wp-content/uploads/2017/12/white-marble-background-tumblr-7.jpg'); 
+}
+
+.header li{
+  display: inline-block;
+  padding: 10px;
+}
+
+
+.header li a{
+  color: black;
+  font-size:15px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+}
+.header li a:hover{
+  color:#EEC338;
+}
+
+.header  img{
+  width:11%;
+  margin-top:12px;
+  margin-left:20px;
+}
+
+.outils button{
+	margin: 0px;
+	width:33%;
+	padding:15px;
+	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Playfair Display', serif;
+	font-size:25px;
+
+}
+.outils button:hover{
+	color:green;
+	border-color: red;
+	border: solid 1px;
+
+}
+
+.left_part{
+	float: left;
+	width: 33%;
+   padding-bottom: 3.8%;
+
+}
+.right_part{
+	/*background-color:green;*/
+ 	float:left;
+ 	width: 67%;
+ 	padding-bottom: 0%;
+ 	min-height: 503px;
+
+
+}
+.right_part button{
+	width: 130px;
+	padding: 20px;
+	margin-top:20px;
+	margin-left: 40%;
+
+
+}
+
+
+.left_part button{
+	width: 130px;
+	padding: 15px;
+	margin-left:30%;
+	margin-top: 5%;
+	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Playfair Display', serif;
+	font-size:18px;
+	background-color: #ffe0b2;
+
+}
+.left_part button:hover{
+	background-color:#ffe0b2;
+	border: solid 1px;
+}
+
+
+.right_part h1{
+	text-align: center;
+}
+
+.left_part li{
+	list-style-type: none;
+}
+

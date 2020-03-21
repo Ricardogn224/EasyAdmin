@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>connexion</title>
+	<link rel="stylesheet" type="text/css" href="../css/style_connexion.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/7fc6a7888d.js" crossorigin="anonymous"></script>
+	<script src="../JS/fonction.js"></script>
+</head>
+<body>
+<!-- création d'une bannière -->
+  <div class="header" id="myheader">
+    <a href="../index.html"> <img src="https://cdn.glitch.com/7524d71d-fe86-4c64-9e50-528abd0e03c6%2Flogo.png?v=1573567702540" alt="logo" > </a>
+      <nav class="bannier">
+      <ul>
+        <li><a href="../html/connexion.html">Se connecter</a></li>
+        <li><a href="../html/s'inscrire.html">S'inscrire</a> </li>
+        <li><a href="../html/contact.html">Contacter</a></li>
+      </ul>
+      </nav>
+  </div>
+
+<p id="titre"> Connexion </p> <hr>
+	<form id="myForm" action="controle.php">
+		<label for="mail "> Adresse mail <br> <input onblur="checkMail(this)" id="mail" type="text" /> </label> <br>
+    <label for="mdp"> Mot de passe <br> <input onblur="checkRempli(this)" id="mdp" type="password" /> </label> <br>
+		<p><input type="submit" id="submit" value="connexion"></p>
+	</form>
+
+   <!-- bas de page (footer) -->
+     <div class="footer">
+        <div class="columne c1">
+          <ul>
+        <li> EasyAdmin </li><br>
+      <li>90 rue de Tolbiac, 75013 Paris </li><br>
+        <li> FRANCE </li>
+        </ul>
+        </div>
+
+        <div class="columne c2">
+          <div id="icon">
+           <a href="">
+       <i class="fab fa-instagram"></i>
+       </a>
+
+       <a href="">
+       <i class="fab fa-twitter"></i>
+       </a>
+
+        <a href="">
+       <i class="fab fa-facebook"></i>
+       </a>
+           </div>
+         <a href="../html/contact.html"><p id="p2"> en savoir plus sur EasyAdmin </p> </a>
+       </div>
+       
+        <div class="columne c3">
+            <ul>
+        <li>0625941830</li><br>
+        <li>contact@easyadmin.fr</li><br>
+        </ul>
+      
+        </div>
+    </div>
+
+      
+    </div>
+</body>
+</html>

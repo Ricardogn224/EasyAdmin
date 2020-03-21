@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Entrez une vente</title>
+	<link rel="stylesheet" type="text/css" href="../css/style_right_part.css">
+    <script src="../JS/fonctions.js"></script>
+</head>
+<body onload="AutoCompletionVente();">
+	<form id="venteForm" onsubmit="">
+		<label>Date:<label>
+			<input id="date" type="date" name="Date" ><br>
+
+		<label for="">Produit</label>
+		<select id="nomProduit" style="width:200px;">
+			 <option value="">--Choissisez un Produit--</option>
+		</select> 
+		<br>
+		<h3 onclick="calculPrix()">Quantités:</h3> <input type="number" id="quantités"><br>
+		<h3>prix:</h3> <input type="number" id="prix"><br>
+		<h3>total:</h3> <input type="number" id="total"><br>
+		<input type="button" name="valider" value="valider" onclick="ajouterVente()">
+	</form>
+</body>
+</html>

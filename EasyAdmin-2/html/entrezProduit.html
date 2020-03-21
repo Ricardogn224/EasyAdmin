@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Entrez un Produit</title>
+	<link rel="stylesheet" type="text/css" href="../css/style_right_part.css">
+	<script src="../JS/ajouter.js"></script>
+</head>
+<body>
+	<form>
+		<label>	Date <input type="date" id="date"><br></label> 
+		<label> ID Produitt<input type="number" id="idProduit"></label><br>
+		<label> Nom du produit<input type="text" id="nomProduit"></label><br>
+		<label>PA du produits <input type="number" id="prixAchatProduit"></label><br>
+		<label>PV du produits <input type="number" id="prixVenteProduit"></label><br>
+		<label>Quantité <input type="number" id="quantitéProduit"></label><br>
+		<label>Description <input type="text" id="description"></label><br>
+		<label><input type="button" id="valider" value="valider" onclick="ajouterProduit()"></label>
+	</form>
+
+	<div id="resultatAction"></div>
+
+
+</body>
+</html>

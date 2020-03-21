@@ -1,0 +1,113 @@
+html{
+  margin: 0px;
+  padding-top: 0px;
+}
+ul {
+  list-style-type: none; 
+}
+li {
+  display: inline;
+  text-decoration: none;
+  padding: 10px;
+}
+li a:hover {
+	border: right 30px;
+	background-color: #ffffe4;
+	padding: 10px;
+
+}
+img{
+	width: 	8%;
+}
+h2{
+	text-align: center;
+}
+html{
+  background-color:#e2e1d9;
+}
+#image{
+  background-image: url(../img/font.jpeg);
+  background-image: url(../img/font.jpeg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+  background-opacity:0.5;
+  margin-bottom:0px;
+  clear: both;
+}
+
+#t1{ 
+	text-align:center; 
+	padding:10%;
+	color:#EEC338;
+}
+
+#top{
+  background-image: url(../img/font.jpeg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+  background-opacity:0.5;
+  margin-bottom:0px;
+  clear: both;
+
+}
+#header{
+  background-color: #EEC338;
+
+}
+.bannier{
+	float: right;
+
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background:#ffd740;
+  margin-top: 20px;
+  clear: both;
+
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float:left;
+  width: 32%;
+ }
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width:150px;
+  height:150px;
+  margin-right:auto;
+  margin-left:35%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.column h1{
+text-align: center;
+}
+div.column h3{
+text-align: center;
+}
+div.column li{
+  text-align:center;
+}
